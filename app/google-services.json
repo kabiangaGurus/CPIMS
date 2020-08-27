@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "951894704098",
+    "firebase_url": "https://cpims-1fa53.firebaseio.com",
+    "project_id": "cpims-1fa53",
+    "storage_bucket": "cpims-1fa53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951894704098:android:693f5415a273d15c9d43bb",
+        "android_client_info": {
+          "package_name": "com.example.cpims"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951894704098-c2f0qpl7kocmm6pvd52asgo2blsf8lgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH15xMU1mHPbWqA2FJ_hNq2kz_DSRhepw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951894704098-c2f0qpl7kocmm6pvd52asgo2blsf8lgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951894704098:android:a0072728183d28fe9d43bb",
+        "android_client_info": {
+          "package_name": "com.example.cpmishealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951894704098-c2f0qpl7kocmm6pvd52asgo2blsf8lgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH15xMU1mHPbWqA2FJ_hNq2kz_DSRhepw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951894704098-c2f0qpl7kocmm6pvd52asgo2blsf8lgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
