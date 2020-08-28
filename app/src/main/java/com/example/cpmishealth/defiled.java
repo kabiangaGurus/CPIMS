@@ -35,10 +35,10 @@ public class defiled extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     StringBuilder fields = new StringBuilder("");
-                    fields.append("Name").append(doc.get("name"));
-                    fields.append("D.o.B ").append(doc.get("dob"));
-                    fields.append("P.o.B ").append(doc.get("pob"));
-                    fields.append("Father ").append(doc.get("father"));
+                    fields.append("").append(doc.get("name"));
+                    fields.append(" ").append(doc.get("dob"));
+                    fields.append("").append(doc.get("pob"));
+                    fields.append(" ").append(doc.get("father"));
                     getdefiled.setText(fields.toString());
                 }
             }

@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class registerstates extends AppCompatActivity {
-Spinner registerstates;
+Spinner registerstates,text;
 EditText statename,stateregno,location,tel;
 Button regstates;
     @Override
@@ -33,12 +33,13 @@ Button regstates;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registerstates);
 
-        registerstates= findViewById(R.id.typestate);
+      registerstates= findViewById(R.id.typestate);
         statename=findViewById(R.id.statename);
         stateregno=findViewById(R.id.stateregno);
         location=findViewById(R.id.location);
         tel = findViewById(R.id.tel);
         regstates=(Button)findViewById(R.id.regstates);
+
 
 
         final FirebaseFirestore firebaseFirestore;
@@ -76,6 +77,7 @@ Button regstates;
                                 reg_entry.put("stateregno", stateregno.getText().toString());
                                 reg_entry.put("location", location.getText().toString());
                                 reg_entry.put("tel", tel.getText().toString());
+
 
 
 
