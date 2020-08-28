@@ -14,7 +14,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class defiled extends AppCompatActivity {
-  TextView getdefiled;
+  TextView getdefiled,getdefiled2;
     FirebaseFirestore db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,22 +23,23 @@ public class defiled extends AppCompatActivity {
 
         getdefiled=findViewById(R.id.getdefiled);
         db = FirebaseFirestore.getInstance();
+        getdefiled2=findViewById(R.id.getdefiled2);
 
         DocumentReference docRef = db.collection("defiled").document("d1");
-        DocumentReference docRef1 = db.collection("defiled").document("d1");
-        DocumentReference docRef2 = db.collection("defiled").document("d1");
-        DocumentReference docRef3 = db.collection("defiled").document("d1");
-        DocumentReference docRef4= db.collection("defiled").document("d1");
+        DocumentReference docRef1 = db.collection("defiled").document("d2");
+        DocumentReference docRef2 = db.collection("defiled").document("d3");
+        DocumentReference docRef3 = db.collection("defiled").document("d4");
+        DocumentReference docRef4= db.collection("defiled").document("d5");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     StringBuilder fields = new StringBuilder("");
-                    fields.append("").append(doc.get("name"));
-                    fields.append(" ").append(doc.get("dob"));
-                    fields.append("").append(doc.get("pob"));
-                    fields.append(" ").append(doc.get("father"));
+                    fields.append("1:Name:").append(doc.get("name"));
+                    fields.append(" D.o.B:").append(doc.get("dob"));
+                    fields.append("P.o.B:").append(doc.get("pob"));
+                    fields.append("Father: ").append(doc.get("father"));
                     getdefiled.setText(fields.toString());
                 }
             }
@@ -54,11 +55,11 @@ public class defiled extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     StringBuilder fields = new StringBuilder("");
-                    fields.append("Name").append(doc.get("name"));
-                    fields.append("D.o.B ").append(doc.get("dob"));
-                    fields.append("P.o.B ").append(doc.get("pob"));
-                    fields.append("Father ").append(doc.get("father"));
-                    getdefiled.setText(fields.toString());
+                    fields.append("2:Name: ").append(doc.get("name"));
+                    fields.append(" D.o.B: ").append(doc.get("dob"));
+                    fields.append(" P.o.B:  ").append(doc.get("pob"));
+                    fields.append(" Father: ").append(doc.get("father"));
+                    getdefiled2.setText(fields.toString());
                 }
             }
         })
@@ -67,66 +68,66 @@ public class defiled extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
                     }
                 });
-
-        docRef2.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot doc = task.getResult();
-                    StringBuilder fields = new StringBuilder("");
-                    fields.append("Name").append(doc.get("name"));
-                    fields.append("D.o.B ").append(doc.get("dob"));
-                    fields.append("P.o.B ").append(doc.get("pob"));
-                    fields.append("Father ").append(doc.get("father"));
-                    getdefiled.setText(fields.toString());
-                }
-            }
-        })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                    }
-                });
-
-        docRef3.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot doc = task.getResult();
-                    StringBuilder fields = new StringBuilder("");
-                    fields.append("Name").append(doc.get("name"));
-                    fields.append("D.o.B ").append(doc.get("dob"));
-                    fields.append("P.o.B ").append(doc.get("pob"));
-                    fields.append("Father ").append(doc.get("father"));
-                    getdefiled.setText(fields.toString());
-                }
-            }
-        })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                    }
-                });
-
-        docRef4.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot doc = task.getResult();
-                    StringBuilder fields = new StringBuilder("");
-                    fields.append("Name").append(doc.get("name"));
-                    fields.append("D.o.B ").append(doc.get("dob"));
-                    fields.append("P.o.B ").append(doc.get("pob"));
-                    fields.append("Father ").append(doc.get("father"));
-                    getdefiled.setText(fields.toString());
-                }
-            }
-        })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                    }
-                });
+//
+//        docRef2.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                if (task.isSuccessful()) {
+//                    DocumentSnapshot doc = task.getResult();
+//                    StringBuilder fields = new StringBuilder("");
+//                    fields.append("Name").append(doc.get("name"));
+//                    fields.append("D.o.B ").append(doc.get("dob"));
+//                    fields.append("P.o.B ").append(doc.get("pob"));
+//                    fields.append("Father ").append(doc.get("father"));
+//                    getdefiled.setText(fields.toString());
+//                }
+//            }
+//        })
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                    }
+//                });
+//
+//        docRef3.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                if (task.isSuccessful()) {
+//                    DocumentSnapshot doc = task.getResult();
+//                    StringBuilder fields = new StringBuilder("");
+//                    fields.append("Name").append(doc.get("name"));
+//                    fields.append("D.o.B ").append(doc.get("dob"));
+//                    fields.append("P.o.B ").append(doc.get("pob"));
+//                    fields.append("Father ").append(doc.get("father"));
+//                    getdefiled.setText(fields.toString());
+//                }
+//            }
+//        })
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                    }
+//                });
+//
+//        docRef4.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                if (task.isSuccessful()) {
+//                    DocumentSnapshot doc = task.getResult();
+//                    StringBuilder fields = new StringBuilder("");
+//                    fields.append("Name").append(doc.get("name"));
+//                    fields.append("D.o.B ").append(doc.get("dob"));
+//                    fields.append("P.o.B ").append(doc.get("pob"));
+//                    fields.append("Father ").append(doc.get("father"));
+//                    getdefiled.setText(fields.toString());
+//                }
+//            }
+//        })
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                    }
+//                });
 
 
 

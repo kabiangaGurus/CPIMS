@@ -37,12 +37,21 @@
             android:fontFamily="sans-serif-black"
             />
         <TextView
+            android:id="@+id/CPIMS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CPIMS (APP)"
             android:textSize="35sp"
             android:layout_below="@+id/logo"
             android:textColor="#EA1702"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children's Act, 2001"
+            android:textSize="25sp"
+            android:layout_below="@+id/CPIMS"
+            android:textColor="#031BF4"
             android:layout_centerHorizontal="true"/>
         <LinearLayout
             android:layout_width="match_parent"

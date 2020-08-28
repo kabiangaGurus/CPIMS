@@ -18,18 +18,28 @@
         android:textColor="#040909"
         android:fontFamily="sans-serif-black"/>
     <TextView
+        android:id="@+id/act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Children Act, 2001"
+        android:textSize="25sp"
+        android:layout_below="@+id/logo"
+        android:textColor="#031BF4"
+        android:layout_centerHorizontal="true"/>
+    <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
         android:layout_marginTop="2dp"
-        android:layout_below="@id/logo"
+        android:layout_below="@id/act"
         android:text="Cases of defiled Children"
         android:layout_centerHorizontal="true"
-        android:textColor="#03A9F4"
+        android:textColor="#F4031F"
         android:textSize="30sp"
        />
 
     <LinearLayout
+        android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -46,12 +56,40 @@
             android:textSize="15dp"
             android:maxLines="3"  />
 
-        <TextView
-            android:id="@+id/textView2"
+        <Button
+            android:id="@+id/btnd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is Liberty Agile Pension Preserver Product"
+            android:text="Action"
+            android:background="@drawable/bluebutton"
+            android:textColor="@android:color/holo_red_dark"
+            android:maxLines="3"  />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1">
+
+        <TextView
+            android:id="@+id/getdefiled2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="Name"
             android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:maxLines="3"  />
+
+        <Button
+            android:id="@+id/btnd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:background="@drawable/bluebutton"
+            android:textColor="@android:color/holo_red_dark"
             android:maxLines="3"  />
 
     </LinearLayout>
