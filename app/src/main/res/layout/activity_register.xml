@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="37dp"
+            android:layout_marginLeft="30dp">
+            <ImageView
+                android:id="@+id/sinb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left"
+                android:background="#138BEA"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="65dp"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/title"
+          android:src="@drawable/logok"
+            android:textColor="#000204"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/title"
+            >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Childs Name"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#040907"
+                android:textColor="#0A0A0B"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#020304" />
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#0A0B0A"
+                android:textColor="#050709"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#040709" />
+            <EditText
+                android:id="@+id/pob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place of Birth"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#040706"
+                android:textColor="#080809"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#050505" />
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fathers Name"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#060B09"
+                android:textColor="#040607"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#070707" />
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mothers Name"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#080B0A"
+                android:textColor="#040505"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#090A0B" />
+            <EditText
+                android:id="@+id/residence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place of Residence"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#020403"
+                android:textColor="#060607"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#03080B" />
+            <EditText
+                android:id="@+id/vulne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type of Vulnerability"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:textColorHint="#070908"
+                android:textColor="#0A0A0B"
+                android:layout_marginLeft="22dp"
+                android:inputType="text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="#01080C" />
+            <Button
+                android:id="@+id/childregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluebutton"
+                android:text="Register Child"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="32dp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

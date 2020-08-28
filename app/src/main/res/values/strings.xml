@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">CPMIS(Health)</string>
+
+    <string-array name="type_admin">
+        <item>Choose the type of User</item>
+        <item>Sub-County Children Officer</item>
+        <item>Area Chief</item>
+        <item>Ass-Chief</item>
+        <item>Village Elder</item>
+    </string-array>
+
+    <string-array name="type_state">
+        <item>Choose the type of Institution or Statutory</item>
+        <item>FB0(Faith Based Organisation)</item>
+        <item>CBO</item>
+        <item>NGO(Non-Governmental Organisation)</item>
+        <item>Private Institution</item>
+        <item>Statutory or Charitable Childrens Institution</item>
+    </string-array>
 </resources>

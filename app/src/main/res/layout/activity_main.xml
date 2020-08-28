@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:background="@drawable/bg"
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/timg">
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,20 +20,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/left"
+                android:background="#445DFF"
                 android:padding="10dp"
                 android:layout_gravity="center"
                 />
         </LinearLayout>
-        <TextView
+        <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="140dp"
-            android:text="CPMIS"
+           android:src="@drawable/logok"
             android:textSize="90dp"
-            android:textColor="#000204"
+            android:textColor="#040909"
             android:fontFamily="sans-serif-black"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPIMS (APP)"
+            android:textSize="35sp"
+            android:layout_below="@+id/logo"
+            android:textColor="#EA1702"
+            android:layout_centerHorizontal="true"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,11 +56,11 @@
                 android:hint="Username"
                 android:layout_marginTop="20dp"
                 android:textSize="16dp"
-                android:textColorHint="#EBF1EF"
-                android:textColor="#ADCCE2"
+                android:textColorHint="#050908"
+                android:textColor="#080809"
                 android:layout_marginLeft="22dp"
                 android:inputType="text"
-                android:background="#0000"
+                android:background="#ffff"
                 android:padding="16dp"
                 android:drawableRight="@drawable/user"
                 android:layout_marginRight="35dp"/>
@@ -67,10 +76,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:textColorHint="#FAFBFB"
+                android:textColorHint="#080909"
                 android:layout_marginLeft="22dp"
                 android:inputType="textPassword"
-                android:textColor="#ADCCE2"
+                android:textColor="#080909"
                 android:maxLength="12"
                 android:background="#0000"
                 android:padding="16dp"
@@ -82,7 +91,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_height="1dp"
                 android:layout_marginBottom="10dp"
-                android:background="#ADCCE2"/>
+                android:background="#BC0946"/>
             <Button
                 android:id="@+id/btnsignin"
                 android:layout_width="match_parent"

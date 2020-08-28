@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,6 +20,8 @@ public class dashboard extends AppCompatActivity {
     FirebaseFirestore db;
     TextView textDisplay,lowincomeshow,drugaddictsshow,separatedshow;
   TextView defiledtxt;
+  Button regchildbtn;
+  TextView admregisterusers,admregisterstates;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,33 @@ public class dashboard extends AppCompatActivity {
         drugaddictsshow=findViewById(R.id.drugaddictsshow);
         separatedshow= findViewById(R.id.separatedshow);
         defiledtxt=findViewById(R.id.defiledtxt);
+        regchildbtn=findViewById(R.id.regchildbtn);
+        admregisterstates=findViewById(R.id.admregisterstates);
+        admregisterusers=findViewById(R.id.admregisterusers);
+
+        admregisterusers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(dashboard.this,registertypes.class);
+                startActivity(intent);
+            }
+        });
+
+        admregisterstates.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(dashboard.this,registerstates.class);
+                startActivity(intent);
+            }
+        });
+
+        regchildbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(dashboard.this,register.class);
+                startActivity(intent);
+            }
+        });
 
         defiledtxt.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".defiled"></activity>
+        <activity android:name=".registerstates"></activity>
+        <activity android:name=".registertypes" />
+        <activity android:name=".register" />
+        <activity android:name=".defiled" />
         <activity android:name=".dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
