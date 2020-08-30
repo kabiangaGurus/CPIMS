@@ -233,7 +233,7 @@
         android:id="@+id/admregisterstates"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register States/FBO/CBO e.t.c"
+        android:text="Register States/FBO/CBO "
         android:textSize="18dp"
         android:textColor="#E91E63"
         android:fontFamily="sans-serif-black"

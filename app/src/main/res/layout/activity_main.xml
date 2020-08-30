@@ -59,7 +59,7 @@
             android:orientation="vertical"
             android:layout_alignParentBottom="true">
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/txtmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
@@ -80,7 +80,7 @@
                 android:layout_height="1dp"
                 android:background="#ADCCE2" />
             <EditText
-                android:id="@+id/pswrd"
+                android:id="@+id/txtpassword"
                 android:textSize="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
